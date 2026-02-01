@@ -1,0 +1,39 @@
+name: smart_attendance_app
+description: "Smart Attendance System - AI-powered attendance management for teachers and students"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  # HTTP & API
+  dio: ^5.4.0
+  # State Management
+  provider: ^6.1.1
+  # Secure Storage
+  flutter_secure_storage: ^9.0.0
+  # Camera & Image
+  image_picker: ^1.0.7
+  # UI Components
+  google_fonts: ^6.1.0
+  flutter_spinkit: ^5.2.0
+  # Animations
+  animations: ^2.0.11
+  # Date/Time
+  intl: ^0.19.0
+  shared_preferences: ^2.5.4
+  file_picker: ^8.0.0
+  url_launcher: ^6.2.5
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true

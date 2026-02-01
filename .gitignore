@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+.vscode/
+
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+build/
+android/.gradle
+ios/.symlinks
+
+# Project Specific
+# Project Specific - Ignore all storage content
+storage/*
+
+# Allow entering these directories
+!storage/face_images/
+!storage/ebooks/
+!storage/submissions/
+!storage/attendance_proofs/
+
+# Ignore contents of these directories
+storage/face_images/*
+storage/ebooks/*
+storage/submissions/*
+storage/attendance_proofs/*
+
+# But keep the .gitkeep files (to verify folder structure)
+!storage/face_images/.gitkeep
+!storage/ebooks/.gitkeep
+!storage/submissions/.gitkeep
+!storage/attendance_proofs/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
