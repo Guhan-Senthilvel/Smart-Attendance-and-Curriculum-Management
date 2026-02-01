@@ -136,12 +136,17 @@ class _CreateTaskScreenState extends State<CreateTaskScreen> {
               
               // 1. Select Class/Subject
               DropdownButtonFormField<Map<String, dynamic>>(
+                isExpanded: true, 
                 decoration: const InputDecoration(labelText: 'Select Class & Subject'),
                 value: _selectedClass,
                 items: _classes.map((c) {
                   return DropdownMenuItem<Map<String, dynamic>>(
                     value: c,
-                    child: Text('${c['subject_name']} (${c['subject_code']}) - Class ${c['class_id']}'),
+                    child: Text(
+                      '${c['subject_name']} (${c['subject_code']}) - Class ${c['class_id']}',
+                      overflow: TextOverflow.ellipsis,
+                      maxLines: 1,
+                    ),
                   );
                 }).toList(),
                 onChanged: (val) => setState(() => _selectedClass = val),
